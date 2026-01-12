@@ -8,12 +8,12 @@ class Student
   }
 
 
-  // setDetails(sid,sname,grade)
-  // {
-  //   this.sid = sid;
-  //   this.sname = sname;
-  //   this.grade = grade;
-  // }
+  setDetails(sid,sname,grade)
+  {
+    this.sid = sid;
+    this.sname = sname;
+    this.grade = grade;
+  }
 
   display()
   {
@@ -33,3 +33,24 @@ stu2.display();
 
 let stu3 = new Student(104, "Ram", "D");
 stu3.display();
+
+// constructor
+// inheritance
+// abstraction
+// polymorphism
+// encapsulation
+// class 
+// arrow function
+// map
+// promise
+// async
+// await
+
+
+
+// error handling
+// oop
+// datatype
+
+// ts
+// type define

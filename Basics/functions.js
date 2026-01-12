@@ -2,13 +2,13 @@
   console.log("Hello, Good Morning!!");
 }
 
-greeting();
+// greeting();
 
 let cars = ["Toyota", "BMW", "Ferrari"]
 
 console.log(cars[2]);  // accessing element
 
-cars[0] = "Volvo"  // changing value  
+cars[0] = "Volvo"  // changing value
 console.log(cars);
 
 // we can store different variables in same array
@@ -30,8 +30,7 @@ let person2 = {
 let person = [person1, person2];
 console.log(person);
 
-
-let fruits = ["Banana", "Apple", "Orange", "Guava"]
+let fruits = ["Banana", "Apple", "Orange", "Guava"];
 console.log(fruits.length);
 
 // Looping elements for array
@@ -39,7 +38,6 @@ console.log(fruits.length);
   {
       console.log(fruits[i]);
   }
- 
 
 // Looping elements for/of loop
 
@@ -58,14 +56,14 @@ console.log(fruits.join("*"))
 //console.log(fruits.pop());
 //console.log(fruits);
 
-// push 
+// push
 fruits.push("Mango");
 console.log(fruits);
 
-// shift
+// shift  remove the element from the beginning of the array
 console.log(fruits.shift());
 
-// unshift
+// unshift add the element at the beginning of the array
 console.log(fruits.unshift("Lemon"));
 
 // concat - joining of two or more arrays
@@ -75,10 +73,9 @@ let arr2 = ["A", "B", "C"]
 
 console.log(arr1.concat(arr2));
 
-
 // slice - some element from array
 
-console.log(fruits.slice(1)); 
+console.log(fruits.slice(1));
 
 // sort
 
@@ -86,3 +83,15 @@ console.log(fruits.sort());
 
 // reverse
 console.log(fruits.reverse());
+
+// splice -- remove element by index
+let index = 2;
+const removedFruit = fruits.splice(index, 1);
+console.log(removedFruit);
+console.log(fruits);
+
+// Iterate over the array
+
+fruits.forEach((fruit, index) => {
+  console.log(`${index}, ${fruit}`);
+});

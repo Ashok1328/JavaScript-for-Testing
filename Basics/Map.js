@@ -47,6 +47,7 @@ const products = [
   {name : "Monitor", price : 201, color: "blue"},
 ]
 
+// use of map
 const discount = products.map((product)=>
 {
   return product.price *0.5;
@@ -57,7 +58,7 @@ console.log(discount);
 const affordableProdcuts = products.filter(product => product.price<200)
 console.log(affordableProdcuts);
 
-array for each method
+// array for each method
 
 const coding = ["C", "C++", "Php", "JS", "Java", "Python", "Ruby"];
 
@@ -67,12 +68,14 @@ const values = coding.forEach((item) => {
 
 console.log(values);
 
+// use of filter method
 const myNums = [1,2,3,4,5,6,7,8,9,10]
 const newNums = myNums.filter((item)=>
 {
   return item>5;
 })
 
+// use of for each method
 const newNums = []
 myNums.forEach((num)=>
 {
@@ -87,3 +90,40 @@ const myNumbers = [1,2,3,4,5,6,7,8,9,10]
 
 const newNums = myNumbers.map((num) => num+10)
 console.log(newNums);
+
+
+
+/* ---------------------------------------------------------------------------------*/
+
+// filter, map and reduce
+
+// Create an array object representing students with their names, scores and get the below result with optimized solution
+/*Filter out students who passed the exam with score more than 36
+  Update Passed student to upper case
+  total scores of all passing students  */
+
+  const student = [
+    {name : "Ranjita", score: 78 },
+    {name : "Saurav", score: 89},
+    {name: "Aditya", score: 25},
+    {name: "Sudip", score: 34},
+    {name: "Ishan", score: 54},
+    {name: "Kushal", score: 36},];
+
+  // student with score more than 36
+const passedStudent = student.filter(Student => Student.score>=36);
+console.log(passedStudent);
+
+// passed student to upper case
+const upperCaseNames = passedStudent.map(students=> students.name.toUpperCase());
+console.log(upperCaseNames);
+
+// total scores of all passing student
+
+const totalScore = passedStudent.reduce((acc,student) => 
+  {
+    acc= acc+ student.score;
+    return acc;
+
+  },0);
+console.log(totalScore);
