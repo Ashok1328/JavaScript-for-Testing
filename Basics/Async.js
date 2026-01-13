@@ -61,5 +61,22 @@ async function Data(data) {
 // const data = await fetchData();
 // console.log("Processing: ", data);
 
+let promise = new Promise((resolve, reject) =>
+{
+  let s = "Hello GFG";
+  if(s)
+  {
+    resolve(s);
+  }
+  else
+  {
+    reject("Some error occured");
+  }
+});
 
+promise.then((data) =>
+  console.log(data)).catch((error) =>
+  {
+    console.log(error);
+  })
 

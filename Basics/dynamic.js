@@ -5,3 +5,4 @@ document.getElementById("myBtn").onclick = displayDate;
 function displayDate() {
   document.getElementById("myDate").innerHTML = Date();
 }
+

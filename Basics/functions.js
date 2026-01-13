@@ -46,15 +46,15 @@ for(ele of fruits)
   console.log(ele);
 }
 
-toString() & join()
+// toString() & join()
 
 console.log(fruits.toString());
 console.log(fruits.join("*"))
 
 // pop
 
-//console.log(fruits.pop());
-//console.log(fruits);
+console.log(fruits.pop());
+console.log(fruits);
 
 // push
 fruits.push("Mango");
