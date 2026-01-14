@@ -17,4 +17,3 @@ else{
 
 const activeUser = response.data.filter(user=> user.active);
 console.log(activeUser);
-
