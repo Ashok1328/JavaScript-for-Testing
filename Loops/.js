@@ -1,41 +1,41 @@
-// loops ----------------------------------------------------
-// for loop --------------------------
+// // loops ----------------------------------------------------
+// // for loop --------------------------
 
-for(i=0; i<5; i++)
-{
-  console.log("Apna College");
-}
-console.log("Loop has ended");
+// for(i=0; i<5; i++)
+// {
+//   console.log("Apna College");
+// }
+// console.log("Loop has ended");
 
-let sum =0;
-for(i=0; i<5; i++)
-{
-  sum += i;
-}
+// let sum =0;
+// for(i=0; i<5; i++)
+// {
+//   sum += i;
+// }
 
-console.log("Sum =",sum);
+// console.log("Sum =",sum);
 
-// // infinite loop -------------------------------
-for(i=1; i>=0;i++)
-{
-  console.log("i =", i);
-}
+// // // infinite loop -------------------------------
+// for(i=1; i>=0;i++)
+// {
+//   console.log("i =", i);
+// }
 
-// while loop---------------------------------
-let j=1;
-while(j<=5)
-{
-  console.log("j = ", j);
-  i++;
-}
+// // while loop---------------------------------
+// let j=1;
+// while(j<=5)
+// {
+//   console.log("j = ", j);
+//   i++;
+// }
 
-// do-while loop -------------------------------
-let i=11;
-do{
-  console.log("Beastay")
-  i++;
-}
-while(i<=10);
+// // do-while loop -------------------------------
+// let i=11;
+// do{
+//   console.log("Beastay")
+//   i++;
+// }
+// while(i<=10);
 
 // for-of loop -----------------------------------
 
@@ -64,25 +64,25 @@ for(let key in student)  // return key in output
 }
 
 
-// -----------------------------------------------------------------------------
+// // -----------------------------------------------------------------------------
 
-for(let num=0; num<=100; num++)
-{
-  if(num %2 !== 0)
-  {
-    console.log("Even number is : ", num);
-  }
-}
+// for(let num=0; num<=100; num++)
+// {
+//   if(num %2 !== 0)
+//   {
+//     console.log("Even number is : ", num);
+//   }
+// }
 
-// ----------------------------------------------------------------------------
+// // ----------------------------------------------------------------------------
 
-let gameNum = 25;
-let userNum = prompt("Guess the number: ");
+// let gameNum = 25;
+// let userNum = prompt("Guess the number: ");
 
-while(userNum != gameNum)
-{
-  userNum = prompt("You entered wrong number. Guess Again: ");
-}
+// while(userNum != gameNum)
+// {
+//   userNum = prompt("You entered wrong number. Guess Again: ");
+// }
 
-console.log("Congratulation!! you entered the right number")
+// console.log("Congratulation!! you entered the right number")
 
