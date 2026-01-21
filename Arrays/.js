@@ -7,7 +7,7 @@ console.log(marks[0]); // indices
 marks[0] = 25; // change value
 console.log(marks);
 
-// Loopingo over an array ----------------------------------------
+// Looping over an array ----------------------------------------
 // for loop -------------------
 let heroess = ["ironman", "batman", "spiderman", "antman", "hulk", "thor"];
 for (let i = 0; i < heroess.length; i++) {
@@ -46,12 +46,11 @@ for (let val of items) {
 }
 console.log(items);
 
-for(let i=0; i<items.length; i++)
-{
+for (let i = 0; i < items.length; i++) {
   let offer = items[i] / 10;
   items[i] -= offer;
 }
-console.log("Value after offer:",items);
+console.log("Value after offer:", items);
 
 // Array methods ----------------------------------------------------
 // Push method
@@ -118,3 +117,62 @@ console.log(companies);
 let addedCompanies = companies.push("Amazon");
 console.log("Added Companies: ", addedCompanies);
 console.log(companies);
+
+// forEach Loop in arrays -------------------------------------------------------
+let array = ["kathmandu", "Lalitpur", "Bhaktapur"];
+array.forEach((val, idx) => {
+  console.log(val.toUpperCase(), idx);
+});
+
+// ------------------------------------------
+let numbers = [1, 2, 3, 4, 5, 6];
+numbers.forEach((num) => {
+  console.log(num * num);
+});
+
+// map ---------------------------
+let nums = [68, 56, 84];
+let newArr = nums.map((val) => {
+  return val * val;
+});
+console.log(newArr);
+
+// filter -------------------------
+let evenNum = [1, 2, 3, 5, 4, 6, 7, 8, 9];
+let evenArr = evenNum.filter((val) => {
+  return val % 2 === 0;
+});
+console.log(evenArr);
+
+// reduce ------------------------------
+const Array1 = [1, 2, 6, 3, 4];
+const output = Array1.reduce((res, curr) => {
+  return res > curr ? res : curr;
+});
+console.log(output);
+
+// -------------------------------------------------------------------------
+
+let stuMarks = [35, 45, 55, 65, 90, 91, 89];
+let student = stuMarks.filter((val) => {
+  return val >= 90;
+});
+console.log(student);
+
+//-----------------------------------------------------------------------
+let n = prompt("Enter a number: ");
+let array2 = [];
+for (let i = 1; i <= n; i++) {
+  array2[i - 1] = i;
+}
+console.log(array2);
+
+let add = array2.reduce((res, curr) => {
+  return res + curr;
+});
+console.log("Sum= ", add);
+
+let factorial = array2.reduce((res, curr) => {
+  return res * curr;
+});
+console.log("Factorial = ", factorial);
