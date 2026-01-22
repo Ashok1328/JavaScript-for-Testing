@@ -1,0 +1,23 @@
+h2{
+  font-size: 50px;
+  color: red;
+  background-color: aliceblue;
+}
+
+.box{
+  height: 80px;
+  width: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+  background-color:aqua;
+}
+
+.para{
+  font-size: 30px;
+  background-color: beige;
+}
+
+.newClass{
+  font-style: italic;
+}
