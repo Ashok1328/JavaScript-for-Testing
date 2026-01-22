@@ -14,7 +14,7 @@ message("Weekend goes by playing basketball", 650); // ----- varaible inside fun
 function sum(a, b) {
   console.log("Added value: ", a + b);
 }
-sum(4, 5);
+sum(6, 8);
 
 // using return keyword
 function multiply(x, y) {
