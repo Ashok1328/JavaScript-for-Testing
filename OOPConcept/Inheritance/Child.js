@@ -6,7 +6,7 @@ class Child extends Parent {
   constructor(name, age, grade) {
     // call the parent class constructor using super
     super(name, age);
-    this.grade = grade;8
+    this.grade = grade;
     
   }
 
