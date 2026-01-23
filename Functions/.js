@@ -10,7 +10,7 @@ function message(msg, n) {
 }
 message("Weekend goes by playing basketball", 650); // ----- varaible inside function call is argument
 
-// withiut using return keyword
+// without using return keyword
 function sum(a, b) {
   console.log("Added value: ", a + b);
 }
